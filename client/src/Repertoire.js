@@ -8,7 +8,7 @@ export default function Repertoire() {
         <div style={{ backgroundImage:`url(${bg})`}}>
             <main>
                 <article className="rectangle">
-                    <h1>repertoire</h1>
+                    <h1>Repertoire</h1>
                     <p className="paragraph">All of me – John Legend</p>
                     <p>All of me – John Legend</p>
                     <p>All of me – John Legend</p>
