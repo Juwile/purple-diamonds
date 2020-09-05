@@ -11,6 +11,10 @@ export default function Repertoire() {
                     <h1>repertoire</h1>
                     <p className="paragraph">All of me – John Legend</p>
                     <p>All of me – John Legend</p>
+                    <p>All of me – John Legend</p>
+                    <p>All of me – John Legend</p>
+                    <p>All of me – John Legend</p>
+                    <p>All of me – John Legend</p>
                 </article>
             </main>
         </div>
