@@ -7,7 +7,12 @@ body {
     font-family: 'Work Sans', sans-serif, Times;
     font-size: 1.1em;
     line-height: 1.5;
-    --purple: #4c2156;
+    --purple: #4C2157;
+    --bg-blue: #d7ddf1;
+    --bg-rose: #f8e5f1;
+    --bright-lila: #cdb5d8;
+    --lila: #a185bd;
+    --white: #fefefe;
 }
 
 .background {
