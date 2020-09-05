@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './default.css';
-import img from './bg-color-full.png'
+import img from './logo-new.jpg'
 
 import Contents from "./Contents.js";
 
