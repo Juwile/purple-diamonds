@@ -9,7 +9,7 @@ function NavBar() {
     return(
         <div>
             <header>
-                <img src={img} alt="Logo" className="logo"/>
+                <NavLink to="/home"><img src={img} alt="Logo" className="logo"/></NavLink>
                 <nav>
                     <ul className="nav-ul">
                         <li className="nav-li"><NavLink to="/about">about</NavLink></li>
