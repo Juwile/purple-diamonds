@@ -7,6 +7,8 @@ body {
     font-family: 'Work Sans', sans-serif, Times;
     font-size: 1.1em;
     line-height: 1.5;
+    font-weight: 300;
+    color:black;
 }
 
 .background {
@@ -33,7 +35,7 @@ a:visited{
 }
 
 h1{
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin-top: 10px;
 }
 
@@ -41,9 +43,11 @@ h2 {
     font-size: 1.7em;
     margin: 10px 0 10px 0;
     line-height: 1.2em;
-    color: red;
 }
 
+.lead{
+  font-size: 1.2em;
+}
 
 .paragraph {
     color: deepskyblue;
@@ -89,7 +93,7 @@ header {
 
 .rectangle {
     border: solid white 16px;
-    margin: 0 100px 0 100px;
+    margin: 0 15% 0 15%;
     padding: 30px 60px 30px 60px;
 }
 
@@ -97,6 +101,47 @@ main {
     margin-top: 100px;
 }
 
+/***********************************************Home****************************************************/
+
+.home{
+  text-align: center;
+}
+
+.teaser-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.teaser{
+  display: block;
+  width: 33%;
+  margin: 20px 20px 0 20px;
+}
+
+.diamond {
+  margin: 40px 0 60px 0;
+	width: 160px;
+	height: 160px;
+	transform: rotate(45deg);
+	outline: 1px solid black;
+	overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diamond img {
+	max-height: 250%;
+	transform: rotate(-45deg);
+	margin: -60%;
+	/*z-index: -1;*/
+	/*position: relative;*/
+}
+
+.teaser-text{
+  margin: 20px 20px 20px 20px;
+
+}
 
 /***********************************************Footer****************************************************/
 
