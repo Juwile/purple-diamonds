@@ -9,17 +9,27 @@ function NavBar() {
     return(
         <div>
             <header>
-                <img src={img} alt="Logo" className="logo"/>
+                <NavLink to="/home"><img src={img} alt="Logo" className="logo"/></NavLink>
                 <nav>
                     <ul className="nav-ul">
-                        <li className="nav-li"><NavLink to="/about">about</NavLink></li>
-                        <li className="nav-li"><NavLink to="/repertoire">repertoire</NavLink></li>
-                        <li className="nav-li"><NavLink to="/aufnahmen">aufnahmen</NavLink></li>
-                        <li className="nav-li"><NavLink to="/kontakt">kontakt</NavLink></li>
+                        <li className="nav-li"><NavLink to="/about">About</NavLink></li>
+                        <li className="nav-li"><NavLink to="/repertoire">Repertoire</NavLink></li>
+                        <li className="nav-li"><NavLink to="/aufnahmen">Aufnahmen</NavLink></li>
+                        <li className="nav-li"><NavLink to="/kontakt">Kontakt</NavLink></li>
                     </ul>
                 </nav>
 
             </header>
+        </div>
+    );
+}
+
+function Footer() {
+    return(
+        <div>
+            <footer>
+            <p>Footer Text</p>
+            </footer>
         </div>
     );
 }
@@ -29,6 +39,7 @@ export default function App() {
         <div className="background">
             <NavBar />
             <Contents />
+            <Footer />
         </div>
     );
 }
