@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './default.css';
 import img from './logo.jpg'
 
+
 import Contents from "./Contents.js";
 
 function NavBar() {
