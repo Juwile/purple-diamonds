@@ -310,7 +310,7 @@ background: var(--lila);
   .rectangle {
       margin: 0 5% 0 5%;
       padding: 0 12px 0 12px;
-      border: solid rgba(255, 255, 255, 0.5) 10px;
+      border: solid rgba(255, 255, 255, 1) 10px;
   }
 
   h1{
@@ -332,6 +332,12 @@ background: var(--lila);
     margin: 0 6px 24px 6px;
   }
 
+  .background {
+      background-position: 0% 60%;
+      background-size: 150%;
+      background-attachment: fixed;
+  }
+
 
 /***********************************************Header****************************************************/
   .navBar{
@@ -339,7 +345,7 @@ background: var(--lila);
   }
 
   .logo {
-      width: 40%;
+      width: 60%;
   }
 
   .bm-burger-button {
