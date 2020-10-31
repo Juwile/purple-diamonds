@@ -109,6 +109,7 @@ main {
   padding: 12px 24px 12px 24px;
   font-size: 1em;
   cursor: pointer;
+  text-transform: lowercase;
 }
 
 .button:hover{
@@ -172,6 +173,29 @@ main {
   margin: 0 0 5px 0;
 }
 
+/***********************************************Kontakt****************************************************/
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px 24px 0;
+  max-width: 50%;
+}
+
+input{
+  margin-bottom: 24px;
+  padding: 6px 6px 6px 6px;
+}
+
+textarea{
+  padding: 6px 6px 96px 6px;
+  margin: 0 0 48px 0;
+}
+
+form .button{
+  max-width: 30%;
+  background-color: transparent;
+}
 
 
 /***********************************************Footer****************************************************/
@@ -179,7 +203,6 @@ main {
 footer {
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.3);;
-
     padding: 20px 80px 20px 80px;
 
 }
