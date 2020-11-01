@@ -13,7 +13,7 @@ export default function Home() {
                     <div class="diamond">
                       <img src={img} alt="avatar"></img>
                     </div>
-                    <h2>Teaser 1</h2>
+                    <h2>Teaser Purple</h2>
                     <p class="teaser-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
                     </p>
                     <a className="button">Mehr anzeigen</a>
@@ -22,7 +22,7 @@ export default function Home() {
                     <div class="diamond">
                       <img src={img} alt="avatar"></img>
                     </div>
-                    <h2>Teaser 1</h2>
+                    <h2>Teaser Purple</h2>
                     <p class="teaser-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
                     </p>
                     <a className="button">Mehr anzeigen</a>
@@ -31,7 +31,7 @@ export default function Home() {
                     <div class="diamond">
                       <img src={img} alt="avatar"></img>
                     </div>
-                    <h2>Teaser 1</h2>
+                    <h2>Teaser Purple</h2>
                     <p class="teaser-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
                     </p>
                     <a className="button">Mehr anzeigen</a>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './default.css';
-import img from './logo.jpg'
+import img from './logo.svg'
 import BurgerMenu from "./BurgerMenu.js";
 
 
