@@ -66,7 +66,6 @@ h2 {
 /***********************************************Header****************************************************/
 
 header {
-    grid-area: header;
     margin-top: 24px;
     width:100%;
 }
@@ -93,7 +92,7 @@ header {
 
 
 .rectangle {
-    border: solid white 16px;
+    border: solid rgba(255, 255, 255, 1)  16px;
     margin: 0 15% 0 15%;
     padding: 24px 48px 24px 48px;
 }
@@ -204,5 +203,191 @@ footer {
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.3);;
     padding: 20px 80px 20px 80px;
+
+}
+
+/************************ Burger Menu **********************/
+
+
+#page-wrap {
+/* Prevent sidebar from showing a scrollbar on page */
+overflow: hidden;
+}
+
+
+/* Individual item */
+
+
+.bm-item {
+display: inline-block;
+/* Our sidebar item styling */
+text-decoration: none;
+margin: 10px 0 5px 0;
+color: var(--white);
+transition: color 0.2s;
+padding-left: 20px;
+
+}
+
+/* Change color on hover */
+
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+background: var(--lila);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+height: 24px;
+width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+background: var(--lila);
+}
+
+/* General sidebar styles */
+.bm-menu {
+background: var(--white);
+font-size: 1em;
+overflow: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+fill: #7787A6;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+color: var(--lila);
+}
+
+/* Styling of overlay */
+.bm-overlay {
+background: var(--lila);
+}
+
+/***********************************************RWD 1200px****************************************************/
+@media only screen and (max-width: 1200px) {
+
+  .rectangle {
+      margin: 0 15% 0 15%;
+
+  }
+
+/************Home**********************/
+
+  .teaser-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .teaser{
+    display: block;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+
+  .teaser-text{
+    margin: 24px 24px 24px 24px;
+  }
+
+
+
+}
+
+/***********************************************RWD 600px****************************************************/
+@media only screen and (max-width: 600px) {
+  .rectangle {
+      margin: 0 5% 0 5%;
+      padding: 0 12px 0 12px;
+      border: solid rgba(255, 255, 255, 1) 10px;
+  }
+
+  h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 1.7em;
+    margin:24px 6px 12px 6px;
+  }
+
+  h2{
+    font-size: 1.4em;
+  }
+
+
+
+  .lead{
+    font-size: 1.1em;
+    margin: 0 6px 24px 6px;
+  }
+
+  .background {
+    background-image: url('bg_mobile.png');
+    background-position: 0% 50%;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+
+/***********************************************Header****************************************************/
+  .navBar{
+    display: none;
+  }
+
+  .logo {
+      width: 50%;
+  }
+
+  .bm-burger-button {
+    position: absolute;
+    width: 40px;
+    height: 12px;
+    display: block;
+    top: 40px;
+    left: 5%;
+  }
+
+
+  .burger-container{
+    display: block;
+  }
+
+/***********************************************Home****************************************************/
+
+.teaser-text{
+  padding: 0;
+  margin: 0 6px 24px 6px;
+}
+
+.teaser h2{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: -30px 0 12px 0;
+}
+
+.teaser{
+  margin: 0 0 70px 0;
+}
+
+
+/***********************************************Repertoire****************************************************/
+
+  .columns{
+    column-count: 1;
+  }
+
+
 
 }
