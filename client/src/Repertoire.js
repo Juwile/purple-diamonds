@@ -7,7 +7,7 @@ export default function Repertoire() {
         <div>
             <main>
                 <article className="rectangle">
-                    <h1>repertoire</h1>
+                    <h1>Repertoire</h1>
                     <h2>Gesang und Piano</h2>
                     <div class="columns">
                       <p>All of me – John Legend</p>

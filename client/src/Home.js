@@ -1,40 +1,42 @@
 import React from 'react';
-import img from './piano.JPG'
+import img1 from './pictures/purple-diamonds.jpg'
+import img3 from './pictures/piano-qd.jpg'
+import img2 from './pictures/repertoire.jpg'
 
 export default function Home() {
     return(
         <div>
         <main>
             <article className="rectangle home">
-                <h1>Piano und Gesang</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit a.</p>
+                <h1>Piano und Gesang für Ihren Event</h1>
+                <p class="lead">Ob Hochzeit, Taufe oder Feier jeglicher Art! Wir freuen uns, Ihren Anlass zu einem besonderen Moment werden zu lassen und ihn musikalisch zu untermalen.</p>
                 <div class="teaser-container">
                   <div class="teaser">
                     <div class="diamond">
-                      <img src={img} alt="avatar"></img>
+                      <img src={img1} alt="avatar"></img>
                     </div>
-                    <h2>Teaser Purple</h2>
-                    <p class="teaser-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                    <h2>Über uns</h2>
+                    <p class="teaser-text">Schöne Pianobegleitung und harmonische Zweistimmigkeit mit viel Herz!
                     </p>
-                    <a className="button">Mehr anzeigen</a>
+                    <a className="button">Mehr erfahren</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">
-                      <img src={img} alt="avatar"></img>
+                      <img src={img2} alt="avatar"></img>
                     </div>
-                    <h2>Teaser Purple</h2>
-                    <p class="teaser-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                    <h2>Repertoire</h2>
+                    <p class="teaser-text">Einzigartige und auf Ihre Wünsche abgestimmte Liedarrangements speziell für Hochzeiten.
                     </p>
-                    <a className="button">Mehr anzeigen</a>
+                    <a className="button">Mehr Infos</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">
-                      <img src={img} alt="avatar"></img>
+                      <img src={img3} alt="avatar"></img>
                     </div>
-                    <h2>Teaser Purple</h2>
-                    <p class="teaser-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                    <h2>Aufnahmen</h2>
+                    <p class="teaser-text">Hörprobe gefällig? Stöbern Sie durch unsere Aufnahmen und machen Sie sich ein Bild.
                     </p>
-                    <a className="button">Mehr anzeigen</a>
+                    <a className="button">Jetzt reinhören</a>
                   </div>
                 </div>
             </article>

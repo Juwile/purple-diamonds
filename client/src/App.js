@@ -15,9 +15,11 @@ function NavBar() {
                 <nav className="navBar">
                     <ul className="nav-ul">
                         <li className="nav-li"><NavLink to="/about">About</NavLink></li>
+                        <li className="nav-li"><NavLink to="/vorteile">Angebot</NavLink></li>
                         <li className="nav-li"><NavLink to="/repertoire">Repertoire</NavLink></li>
                         <li className="nav-li"><NavLink to="/aufnahmen">Aufnahmen</NavLink></li>
                         <li className="nav-li"><NavLink to="/kontakt">Kontakt</NavLink></li>
+                        <li className="nav-li"><NavLink to="/links">Links</NavLink></li>
                     </ul>
                 </nav>
             </header>
@@ -29,7 +31,7 @@ function Footer() {
     return(
         <div>
             <footer>
-            <p>Footer Text</p>
+            <p>Purple Diamonds  |  <a href="mailto:purple.d.music@gmail.com">purple.d.music@gmail.com</a></p>
             </footer>
         </div>
     );
