@@ -48,19 +48,25 @@ a:hover{
 h1{
     font-size: 2.3em;
     margin-top: 12px;
-    text-transform: lowercase;
+
 }
 
 h2 {
     font-size: 1.7em;
     line-height: 1.2em;
-    text-transform: lowercase;
+    margin: 48px 0 12px 0;
+
 }
 
 .lead{
   font-size: 1.2em;
 }
 
+
+
+.hide-on-large{
+  display: none;
+}
 
 
 /***********************************************Header****************************************************/
@@ -128,7 +134,7 @@ main {
 .teaser-container{
   display: flex;
   flex-direction: row;
-  padding: 0 0 20px 0;
+  padding: 48px 0 24px 0;
 }
 
 .teaser{
@@ -137,7 +143,12 @@ main {
   margin: 24px 24px 0 24px;
 }
 
-.diamond {
+.teaser img{
+  max-width: 70%;
+  border: solid var(--black) 1px;
+}
+
+/*.diamond {
   margin: 48px 0 96px 0;
 	width: 160px;
 	height: 160px;
@@ -153,14 +164,18 @@ main {
 	max-height: 250%;
 	transform: rotate(-45deg);
 	margin: -60%;
-	/*z-index: -1;*/
-	/*position: relative;*/
-}
+}*/
 
 .teaser-text{
   margin: 24px 24px 48px 24px;
 }
 
+/***********************************************About****************************************************/
+
+.img-about{
+  max-width: 60%;
+  margin: 24px 0 12px 0;
+}
 /***********************************************Repertoire****************************************************/
 
 .columns{
@@ -171,6 +186,7 @@ main {
 .columns p{
   margin: 0 0 5px 0;
 }
+
 
 /***********************************************Kontakt****************************************************/
 
@@ -206,6 +222,10 @@ footer {
 
 }
 
+footer a{
+  font-size: 1em;
+}
+
 /************************ Burger Menu **********************/
 
 
@@ -223,7 +243,7 @@ display: inline-block;
 /* Our sidebar item styling */
 text-decoration: none;
 margin: 10px 0 5px 0;
-color: var(--white);
+color: var(--black);
 transition: color 0.2s;
 padding-left: 20px;
 
@@ -280,10 +300,24 @@ background: var(--lila);
 /***********************************************RWD 1200px****************************************************/
 @media only screen and (max-width: 1200px) {
 
+  .img-about{
+    max-width: 100%;
+  }
+
+  .hide-on-small{
+    display: none;
+  }
+
+  .hide-on-large{
+    display: block;
+  }
+
   .rectangle {
       margin: 0 15% 0 15%;
 
   }
+
+
 
 /************Home**********************/
 
@@ -296,12 +330,24 @@ background: var(--lila);
   .teaser{
     display: block;
     width: 100%;
-    margin: 20px 0 20px 0;
+    margin: 0 0 96px 0;
   }
 
   .teaser-text{
     margin: 24px 24px 24px 24px;
   }
+
+  .teaser img{
+    max-width: 70%;
+  }
+
+  .teaser h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 24px 0 12px 0;
+
+  }
+
 
 
 
@@ -309,6 +355,9 @@ background: var(--lila);
 
 /***********************************************RWD 600px****************************************************/
 @media only screen and (max-width: 600px) {
+
+
+
   .rectangle {
       margin: 0 5% 0 5%;
       padding: 0 12px 0 12px;
@@ -371,15 +420,14 @@ background: var(--lila);
   margin: 0 6px 24px 6px;
 }
 
+/*
 .teaser h2{
   margin-block-start: 0;
   margin-block-end: 0;
   margin: -30px 0 12px 0;
-}
+}*/
 
-.teaser{
-  margin: 0 0 70px 0;
-}
+
 
 
 /***********************************************Repertoire****************************************************/
@@ -389,5 +437,11 @@ background: var(--lila);
   }
 
 
+
+/***********************************************Footer****************************************************/
+
+footer{
+  padding: 24px 5% 24px 5%;
+}
 
 }
