@@ -18,7 +18,7 @@ export default function Home() {
                     <h2>Über uns</h2>
                     <p class="teaser-text">Schöne Pianobegleitung und harmonische Zweistimmigkeit mit viel Herz!
                     </p>
-                    <a className="button">Mehr erfahren</a>
+                    <a className="button" href="/about">Mehr erfahren</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">
@@ -27,7 +27,7 @@ export default function Home() {
                     <h2>Repertoire</h2>
                     <p class="teaser-text">Einzigartige und auf Ihre Wünsche abgestimmte Liedarrangements speziell für Hochzeiten.
                     </p>
-                    <a className="button">Mehr Infos</a>
+                    <a className="button" href="/repertoire">Mehr Infos</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">
@@ -36,7 +36,7 @@ export default function Home() {
                     <h2>Aufnahmen</h2>
                     <p class="teaser-text">Hörprobe gefällig? Stöbern Sie durch unsere Aufnahmen und machen Sie sich ein Bild.
                     </p>
-                    <a className="button">Jetzt reinhören</a>
+                    <a className="button" href="/aufnahmen">Jetzt reinhören</a>
                   </div>
                 </div>
             </article>
