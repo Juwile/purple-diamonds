@@ -1,6 +1,6 @@
 import React from 'react';
 import './default.css';
-
+import equipment from './pictures/gesang-piano.jpg'
 
 export default function Vorteile() {
     return(
@@ -9,6 +9,7 @@ export default function Vorteile() {
                 <article className="rectangle">
                     <h1>Hochzeiten sind unser Ding</h1>
                     <p class="lead">Für Ihren grossen Tag studieren wir selbstverständlich Ihre Wunschlieder ein. Viel Inspiration finden Sie in unserem Repertoire, das vor allem auf Hochzeiten ausgelegt ist und in unseren Audio-Beispielen.</p>
+                    <img class="img-angebot" src={equipment} alt="Equipment"></img>
                     <h2>100% Live Musik</h2>
                     <p>Wir treten immer 100% Live auf – kein Playback, keine Karaoke-CD, oder ähnliches! Das hebt uns von zahlreichen anderen Gesangsduos ab. Die Klavierbegleitung gibt jedem Lied einen einzigartigen Touch. Unsere Versionen finden Sie sonst nirgendwo!</p>
                     <h2>Alles inklusive</h2>

@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './default.css';
-import img from './logo.svg'
+import logo from './logo.svg';
+import insta from './pictos/insta.png'
+import facebook from './pictos/facebook.png'
 import BurgerMenu from "./BurgerMenu.js";
 
 
@@ -11,7 +13,7 @@ function NavBar() {
     return(
         <div>
             <header>
-                <NavLink to="/home"><img src={img} alt="Logo" className="logo"/></NavLink>
+                <NavLink to="/home"><img src={logo} alt="Logo" className="logo"/></NavLink>
                 <nav className="navBar">
                     <ul className="nav-ul">
                         <li className="nav-li"><NavLink to="/about">About</NavLink></li>
@@ -31,7 +33,13 @@ function Footer() {
     return(
         <div>
             <footer>
-            <p>Purple Diamonds  |  <a href="mailto:purple.d.music@gmail.com">purple.d.music@gmail.com</a></p>
+            <div class="contact">
+              <p>Purple Diamonds  |  <a href="mailto:purple.d.music@gmail.com">purple.d.music@gmail.com</a></p>
+            </div>
+            <div class="socialMedia">
+              <a href="https://www.instagram.com/___purplediamonds___/"><img src={insta} alt="Instagram"/></a>
+              <a href="https://de-de.facebook.com/purple.d.music"><img src={facebook} alt="Facebook"/></a>
+            </div>
             </footer>
         </div>
     );
