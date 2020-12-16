@@ -10,7 +10,7 @@ export default props => {
             <a className="menu-item" href="/about">
                 About
             </a>
-            <a className="menu-item" href="/angebot">
+            <a className="menu-item" href="/vorteile">
                 Angebot
             </a>
             <a className="menu-item" href="/repertoire">

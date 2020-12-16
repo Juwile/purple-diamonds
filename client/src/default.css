@@ -1,4 +1,7 @@
 * {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 
 }
 
@@ -7,7 +10,7 @@ body {
     font-family: 'Work Sans', sans-serif, Times;
     font-size: 1.1em;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 200;
     --purple: #4C2157;
     --bg-blue: #d7ddf1;
     --bg-rose: #f8e5f1;
@@ -31,31 +34,43 @@ a{
     font-weight: 600;
     text-transform: lowercase;
     color: var(--black);
+    cursor: pointer;
 }
 
 a:link{
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:visited{
     color: var(--black);
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover{
   color: var(--lila);
+  cursor: pointer;
 }
 
 h1{
-    font-size: 2.3em;
-    margin-top: 12px;
+    font-size: 2.1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 12px 0 24px 0;
 
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     line-height: 1.2em;
-    margin: 48px 0 12px 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 24px 0 12px 0;
 
+}
+
+p{
+  margin: 12px 0 12px 0;
 }
 
 .lead{
@@ -67,6 +82,7 @@ h2 {
 .hide-on-large{
   display: none;
 }
+
 
 
 /***********************************************Header****************************************************/
@@ -119,7 +135,7 @@ main {
 
 .button:hover{
   border-color: rgb(255,255,255);
-  background-color: var(--lila);
+  background-color: var(--purple);
   color: var(--white);
   font-weight: bold;
   transition: 0.3s;
@@ -143,9 +159,15 @@ main {
   margin: 24px 24px 0 24px;
 }
 
+/*.teaser img:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}*/
+
 .teaser img{
   max-width: 70%;
-  border: solid var(--black) 1px;
+
+  /*box-shadow: 5px 5px 5px 5px rgba(35, 15, 54, 0.1);*/
 }
 
 /*.diamond {
@@ -153,19 +175,24 @@ main {
 	width: 160px;
 	height: 160px;
 	transform: rotate(45deg);
-	outline: 1px solid black;
+	outline: 5px solid white;
 	overflow: hidden;
   display: block;
+
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .diamond img {
-	max-height: 250%;
+	max-height: 160%;
 	transform: rotate(-45deg);
-	margin: -60%;
-}*/
-
+	margin: -10% -80%;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+*/
 .teaser-text{
   margin: 24px 24px 48px 24px;
 }
@@ -173,9 +200,21 @@ main {
 /***********************************************About****************************************************/
 
 .img-about{
-  max-width: 60%;
-  margin: 24px 0 12px 0;
+  float: left;
+  max-width: 40%;
+  margin: 0 24px 24px 0;
 }
+
+
+
+/***********************************************Angebot****************************************************/
+.img-angebot{
+  max-width: 50%;
+  float: left;
+  margin: 0 24px 24px 0;
+}
+
+
 /***********************************************Repertoire****************************************************/
 
 .columns{
@@ -186,6 +225,33 @@ main {
 .columns p{
   margin: 0 0 5px 0;
 }
+
+/***********************************************Aufnahmen****************************************************/
+
+.flex-container{
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+}
+
+.flex-container div{
+  margin: 0 24px 0 0px;
+
+
+}
+iframe{
+  margin: 0 24px 0 0px;
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-container h2{
+  font-size: 1.2em;
+}
+
 
 
 /***********************************************Kontakt****************************************************/
@@ -212,14 +278,37 @@ form .button{
   background-color: transparent;
 }
 
+/***********************************************Links****************************************************/
+
+.links a{
+  font-size: 1em;
+}
 
 /***********************************************Footer****************************************************/
 
 footer {
     margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.3);;
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px 80px 20px 80px;
+    display: flex;
 
+}
+
+.socialMedia{
+  display: flex;
+  justify-content: flex-end;
+  width:50%;
+  align-self: center;
+}
+
+footer img {
+  margin-left: 10px;
+
+}
+
+.contact{
+  width:50%;
+  align-self: center;
 }
 
 footer a{
@@ -317,6 +406,10 @@ background: var(--lila);
 
   }
 
+  h2{
+    margin:24px 0 12px 0;
+  }
+
 
 
 /************Home**********************/
@@ -360,7 +453,7 @@ background: var(--lila);
 
   .rectangle {
       margin: 0 5% 0 5%;
-      padding: 0 12px 0 12px;
+      padding: 0 24px 0 24px;
       border: solid rgba(255, 255, 255, 1) 10px;
   }
 
@@ -368,18 +461,23 @@ background: var(--lila);
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: 1.7em;
-    margin:24px 6px 12px 6px;
+    margin:24px 0 12px 0;
   }
 
   h2{
-    font-size: 1.4em;
+    font-size: 1.3em;
+    margin: 24px 0 6px 0;
+  }
+
+  p{
+    margin: 6px 0 24px 0;
   }
 
 
 
   .lead{
     font-size: 1.1em;
-    margin: 0 6px 24px 6px;
+    margin: 0 0 24px 0;
   }
 
   .background {
@@ -427,7 +525,12 @@ background: var(--lila);
   margin: -30px 0 12px 0;
 }*/
 
-
+/***********************************************Angebot****************************************************/
+.img-angebot{
+  max-width: 100%;
+  float: none;
+  margin: 0;
+}
 
 
 /***********************************************Repertoire****************************************************/

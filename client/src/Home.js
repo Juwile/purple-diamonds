@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from './pictures/purple-diamonds.jpg'
-import img3 from './pictures/piano-qd.jpg'
-import img2 from './pictures/repertoire.jpg'
+import img1 from './pictures/beide-gross-hell.jpg'
+import img2 from './pictures/piano.jpg'
+import img3 from './pictures/aufnahmen.jpg'
 
 export default function Home() {
     return(
@@ -18,16 +18,7 @@ export default function Home() {
                     <h2>Über uns</h2>
                     <p class="teaser-text">Schöne Pianobegleitung und harmonische Zweistimmigkeit mit viel Herz!
                     </p>
-                    <a className="button">Mehr erfahren</a>
-                  </div>
-                  <div class="teaser">
-                    <div class="diamond">
-                      <img src={img2} alt="avatar"></img>
-                    </div>
-                    <h2>Repertoire</h2>
-                    <p class="teaser-text">Einzigartige und auf Ihre Wünsche abgestimmte Liedarrangements speziell für Hochzeiten.
-                    </p>
-                    <a className="button">Mehr Infos</a>
+                    <a className="button" href="/about">Mehr erfahren</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">
@@ -36,8 +27,18 @@ export default function Home() {
                     <h2>Aufnahmen</h2>
                     <p class="teaser-text">Hörprobe gefällig? Stöbern Sie durch unsere Aufnahmen und machen Sie sich ein Bild.
                     </p>
-                    <a className="button">Jetzt reinhören</a>
+                    <a className="button" href="/aufnahmen">Jetzt reinhören</a>
                   </div>
+                  <div class="teaser">
+                    <div class="diamond">
+                      <img src={img2} alt="avatar"></img>
+                    </div>
+                    <h2>Repertoire</h2>
+                    <p class="teaser-text">Einzigartige und auf Ihre Wünsche abgestimmte Liedarrangements speziell für Hochzeiten.
+                    </p>
+                    <a className="button" href="/repertoire">Mehr Infos</a>
+                  </div>
+
                 </div>
             </article>
         </main>
