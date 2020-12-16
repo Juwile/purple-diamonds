@@ -21,6 +21,26 @@ body {
     margin:0;
 }
 
+body:after{
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    background: url('background_50.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0% 20%;
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+
+}
+
+/*
 .background {
     background-image: url('background_50.png');
     background-repeat: no-repeat, repeat;
@@ -28,10 +48,12 @@ body {
     background-size: 100%;
     background-attachment: fixed;
 }
+*/
+
 
 a{
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 200;
     text-transform: lowercase;
     color: var(--black);
     cursor: pointer;
@@ -57,6 +79,7 @@ h1{
     margin-block-start: 0;
     margin-block-end: 0;
     margin: 12px 0 24px 0;
+    font-weight: 200;
 
 }
 
@@ -207,6 +230,9 @@ main {
 
 
 
+
+
+
 /***********************************************Angebot****************************************************/
 .img-angebot{
   max-width: 50%;
@@ -313,6 +339,7 @@ footer img {
 
 footer a{
   font-size: 1em;
+  font-weight: 200;
 }
 
 /************************ Burger Menu **********************/
@@ -446,6 +473,7 @@ background: var(--lila);
 
 }
 
+
 /***********************************************RWD 600px****************************************************/
 @media only screen and (max-width: 600px) {
 
@@ -479,12 +507,18 @@ background: var(--lila);
     font-size: 1.1em;
     margin: 0 0 24px 0;
   }
-
+/*
   .background {
     background-image: url('bg_mobile.png');
     background-position: 0% 50%;
     background-size: 100%;
     background-attachment: fixed;
+  }*/
+
+  body:after{
+    background-image: url('bg_mobile.png');
+    background-position: 0% 50%;
+    background-size: 100%;
   }
 
 
@@ -547,4 +581,29 @@ footer{
   padding: 24px 5% 24px 5%;
 }
 
+.contact{
+  width:70%;
+  align-self: center;
+}
+
+.socialMedia{
+  display: flex;
+  justify-content: flex-end;
+  width:30%;
+  align-self: center;
+}
+
+footer img {
+  max-width: 70%;
+}
+
+
+}
+
+/***********************************************RWD 1800px****************************************************/
+@media only screen and (min-width: 1800px) {
+
+.last-p{
+  margin-bottom: 96px;
+}
 }
