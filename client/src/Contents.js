@@ -16,8 +16,8 @@ export default function Contents() {
         <Switch>
             <Redirect exact from="/" to="/home"/>
             <Route path="/home" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/vorteile" component={Vorteile} />
+            <Route path="/ueber-uns" component={About} />
+            <Route path="/angebot" component={Vorteile} />
             <Route path="/repertoire" component={Repertoire} />
             <Route path="/aufnahmen" component={Aufnahmen} />
             <Route path="/kontakt" component={Kontakt} />
