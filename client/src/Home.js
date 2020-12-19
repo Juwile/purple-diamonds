@@ -18,7 +18,7 @@ export default function Home() {
                     <h2>Über uns</h2>
                     <p class="teaser-text">Schöne Pianobegleitung und harmonische Zweistimmigkeit mit viel Herz!
                     </p>
-                    <a className="button" href="/about">Mehr erfahren</a>
+                    <a className="button" href="/ueber-uns">Mehr erfahren</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">

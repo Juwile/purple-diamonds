@@ -64,15 +64,22 @@ a:link{
     cursor: pointer;
 }
 
+
+
 a:visited{
     color: var(--black);
     text-decoration: none;
-    cursor: pointer;
+
 }
 a:hover{
   color: var(--lila);
-  cursor: pointer;
+
 }
+a:focus{
+  color: var(--lila);
+
+}
+
 
 h1{
     font-size: 2.1em;
@@ -158,7 +165,7 @@ main {
 
 .button:hover{
   border-color: rgb(255,255,255);
-  background-color: var(--purple);
+  background-color: var(--lila);
   color: var(--white);
   font-weight: bold;
   transition: 0.3s;
