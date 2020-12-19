@@ -1,7 +1,7 @@
 import React from 'react';
 import './default.css';
-import tabea from './pictures/tabea.jpg'
-import nadine from './pictures/nadine.jpg'
+import tabea from './pictures/tabea_hell_bl.jpg'
+import nadine from './pictures/nadine_hell_bl.jpg'
 
 
 
