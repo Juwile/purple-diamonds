@@ -19,6 +19,7 @@ body {
     --white: #fefefe;
     --black: #000000;
     margin:0;
+    background-color:rgba(251, 243, 255, 0.6) ;
 }
 
 body:after{
@@ -57,28 +58,41 @@ a{
     text-transform: lowercase;
     color: var(--black);
     cursor: pointer;
+
+
+
 }
+
 
 a:link{
     text-decoration: none;
     cursor: pointer;
-}
 
+}
 
 
 a:visited{
     color: var(--black);
     text-decoration: none;
-
+    cursor: pointer;
 }
+
 a:hover{
   color: var(--lila);
-
+  cursor: pointer;
 }
+
+
 a:focus{
   color: var(--lila);
+  cursor: pointer;
 
 }
+
+
+
+
+
 
 
 h1{
@@ -159,8 +173,8 @@ main {
   border-width: 1px;
   padding: 12px 24px 12px 24px;
   font-size: 1em;
-  cursor: pointer;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .button:hover{
@@ -169,6 +183,7 @@ main {
   color: var(--white);
   font-weight: bold;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 /***********************************************Home****************************************************/
