@@ -42,42 +42,19 @@ class googleForm extends Component {
         .then(data => this.setState({ postId: data.id }));
   }
 
-
-
-
-/*
-  submitForm(e){
-        e.preventDefault();
-        this.props.addProfileMutation({
-            variables: {
-                vorname: this.state.vorname,
-                nachname: this.state.nachname,
-                role: this.state.role,
-                background: this.state.background,
-                goals: this.state.goals,
-                absences: this.state.absences
-            },
-            refetchQueries:[{ // Updates project list
-                query: getProfilesQuery
-            }]
-        }); // addProjectMutation defined at bottom
-        const frm = document.getElementById('add-profile');
-        frm.reset();
-    }*/
-
   render() {
       return(
           <div>
           <main>
               <article className="rectangle">
               <form id="kontakt" onSubmit={this.submitForm}>
-                  <label for="Vorname">Vorname:</label>
+                  <label for="Vorname">Vorname</label>
                   <input type="text" id="Vorname" name="Vorname" onChange={ (e) => this.setState({ vorname:e.target.value})}/>
-                  <label for="Nachname">Nachname:</label>
+                  <label for="Nachname">Nachname</label>
                   <input type="text" id="Nachname" name="Nachname" onChange={ (e) => this.setState({ nachname:e.target.value})}/>
-                  <label for="Email">Email:</label>
+                  <label for="Email">Email</label>
                   <input type="text" id="email" name="email" onChange={ (e) => this.setState({ email:e.target.value})}/>
-                  <label>Anfrage:</label>
+                  <label>Anfrage</label>
                   <textarea type="text" id="Anfrage" name="Anfrage" onChange={ (e) => this.setState({ anfrage:e.target.value})}/>
                   <button class="button">Absenden</button>
                 </form>
