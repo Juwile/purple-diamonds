@@ -291,9 +291,10 @@ main {
 
 }
 iframe{
-  margin: 0 24px 0 0px;
+  margin: 0 24px 24px 0;
   display: flex;
   overflow: hidden;
+  min-width: 300px;
 }
 
 .flex-container h2{
@@ -499,6 +500,30 @@ background: var(--lila);
 
   }
 
+/************Aufnahmen**********************/
+
+  iframe{
+    margin: 0 0px 24px 0;
+    display: flex;
+    min-width: 100%;
+    min-height: 220px;
+
+  }
+
+  .hochformat{
+    overflow: scroll;
+    background-color: red;
+    min-height: 420px;
+  }
+
+  .flex-container{
+  flex-direction: column;
+
+  }
+
+  .flex-container div{
+  margin: 0 0px 0px 0;
+  }
 
 
 
