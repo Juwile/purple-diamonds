@@ -287,14 +287,11 @@ main {
 
 .flex-container div{
   margin: 0 24px 0 0px;
-  min-width: 300px;
-
-
 }
+
 iframe{
   margin: 0 24px 24px 0;
   display: flex;
-  width: 100%;
 
 }
 
@@ -309,8 +306,8 @@ iframe{
 form{
   display: flex;
   flex-direction: column;
-  padding: 0 48px 24px 0;
-  max-width: 60%;
+  padding: 0 0 24px 0;
+  max-width: 50%;
 }
 
 input{
@@ -329,12 +326,31 @@ textarea{
 }
 
 form .button{
-  max-width: 30%;
+  max-width: 40%;
   background-color: transparent;
 }
 
 label{
   padding-bottom: 2px;
+}
+
+.confirmation-box{
+  background-color: var(--lila);
+  color: var(--white);
+  padding: 12px;
+  margin: 24px 0 24px 0;
+  border: 1px solid;
+  max-width: 50%;
+}
+
+.confirmation-box h2{
+  font-size: 1.3em;
+  margin: 12px 0 12px 0;
+
+}
+
+.confirmation-box p{
+  margin: 6px 0 6px 0;
 }
 
 /***********************************************Links****************************************************/
@@ -411,6 +427,7 @@ display: none;
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
 background: var(--lila);
+padding: 1px;
 }
 
 /* Position and sizing of clickable cross button */
@@ -506,15 +523,11 @@ background: var(--lila);
   iframe{
     margin: 0 0px 24px 0;
     display: flex;
-    min-width: 100%;
-    min-height: 220px;
-
+    max-width: 100%;
   }
 
   .hochformat{
-    overflow: scroll;
-    background-color: red;
-    min-height: 420px;
+
   }
 
   .flex-container{
@@ -523,7 +536,7 @@ background: var(--lila);
   }
 
   .flex-container div{
-  margin: 0 0px 0px 0;
+  margin: 0 0 0 0;
   }
 
 
@@ -531,8 +544,8 @@ background: var(--lila);
 }
 
 
-/***********************************************RWD 600px****************************************************/
-@media only screen and (max-width: 600px) {
+/***********************************************RWD 900px****************************************************/
+@media only screen and (max-width: 900px) {
 
 
 
@@ -590,8 +603,8 @@ background: var(--lila);
 
   .bm-burger-button {
     position: absolute;
-    width: 40px;
-    height: 12px;
+    width: 48px;
+    height: 20px;
     display: block;
     top: 40px;
     left: 5%;
@@ -601,6 +614,7 @@ background: var(--lila);
   .burger-container{
     display: block;
   }
+
 
 /***********************************************Home****************************************************/
 
@@ -628,6 +642,21 @@ background: var(--lila);
 
   .columns{
     column-count: 1;
+  }
+
+
+  /***********************************************Kontakt****************************************************/
+
+  form{
+    max-width: 100%;
+  }
+
+  form .button{
+    max-width: 50%;
+  }
+
+  .confirmation-box{
+    max-width: 100%;
   }
 
 

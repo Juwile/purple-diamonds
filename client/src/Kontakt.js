@@ -40,13 +40,32 @@ class googleForm extends Component {
     fetch('https://docs.google.com/forms/u/1/d/e/1FAIpQLSfcvlskqOm0I0OUCy-u00grZ61T9Zm8LYpr8hpZPgPcQsJ7vg/formResponse', requestOptions)
         .then(response => response.json())
         .then(data => this.setState({ postId: data.id }));
+
+    const frm = document.getElementById('kontakt');
+    frm.reset();
   }
+
+  displayConfirmationBox(){
+        setTimeout(() => (
+            this.setState( () => ({
+                showBox: false
+            }))),50000);
+        return(
+            <div className="confirmation-box">
+                <h2>Besten Dank für Ihre Anfrage.</h2>
+                <p>Wir melden uns schnellstmöglich.</p>
+                <p>Liebe Grüsse</p>
+                <p>Purple Diamonds</p>
+            </div>
+        )
+    }
 
   render() {
       return(
           <div>
           <main>
               <article className="rectangle">
+              <h1>Kontakt</h1>
               <form id="kontakt" onSubmit={this.submitForm}>
                   <label for="Vorname">Vorname</label>
                   <input type="text" id="Vorname" name="Vorname" onChange={ (e) => this.setState({ vorname:e.target.value})}/>
@@ -56,8 +75,11 @@ class googleForm extends Component {
                   <input type="text" id="email" name="email" onChange={ (e) => this.setState({ email:e.target.value})}/>
                   <label>Anfrage</label>
                   <textarea type="text" id="Anfrage" name="Anfrage" onChange={ (e) => this.setState({ anfrage:e.target.value})}/>
-                  <button class="button">Absenden</button>
+                  <button class="button" onClick={ () => this.setState( () => ({showBox: true}))}>Absenden</button>
                 </form>
+                <div>
+                      { this.state.showBox ? this.displayConfirmationBox() : null }
+                </div>
               </article>
           </main>
           </div>
