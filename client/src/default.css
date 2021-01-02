@@ -287,14 +287,15 @@ main {
 
 .flex-container div{
   margin: 0 24px 0 0px;
+  min-width: 300px;
 
 
 }
 iframe{
   margin: 0 24px 24px 0;
   display: flex;
-  overflow: hidden;
-  min-width: 300px;
+  width: 100%;
+
 }
 
 .flex-container h2{
