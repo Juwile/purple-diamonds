@@ -1,5 +1,12 @@
 import React from 'react';
 import './default.css';
+import wish from './audio/wish-you-were-here.mp3';
+import aMomentLikeThis from './audio/a-moment-like-this.mp3';
+import schwur from './audio/schwur.mp3';
+import perfect from './audio/perfect.mp3';
+import youRaiseMeUp from './audio/you-raise-me-up.mp3';
+import iHaveAVoice from './audio/i-have-a-voice.mp3';
+import dasBeste from './audio/das-beste.mp3';
 
 
 export default function Repertoire() {
@@ -10,8 +17,19 @@ export default function Repertoire() {
                     <h1>Repertoire</h1>
                     <h2>Gesang und Piano</h2>
                     <div class="columns">
+                      <div className="flex-box">
+                        <p>A Beautiful Noise - Alicia Keys & Brandi Carlile</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={iHaveAVoice}/>
+                        </audio>
+                      </div>
                       <p>All of me – John Legend</p>
-                      <p>A moment like this – Leona Lewis</p>
+                      <div className="flex-box">
+                        <p>A moment like this – Leona Lewis</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={aMomentLikeThis}/>
+                        </audio>
+                      </div>
                       <p>Always remember us this way - Bradley Cooper & Lady Gaga</p>
                       <p>Applaus, Applaus - Sportfreunde Stiller</p>
                       <p>An Tagen wie diesen – Die Toten Hosen</p>
@@ -19,7 +37,12 @@ export default function Repertoire() {
                       <p>Bali - Florian Ast</p>
                       <p>Bridge over troubled water - Simon and Garfunkel</p>
                       <p>Budapest – George Ezra</p>
-                      <p>Das Beste - Silbermond</p>
+                      <div className="flex-box">
+                        <p>Das Beste - Silbermond</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={dasBeste}/>
+                        </audio>
+                      </div>
                       <p>Dr Himu brönnt - Gölä</p>
                       <p>Footprints in the sand - Leona Lewis</p>
                       <p>Halleluja - Leonard Cohan</p>
@@ -45,11 +68,21 @@ export default function Repertoire() {
                       <p>No matter where you are - Us The Duo</p>
                       <p>Nothing Else Matters – Metallica</p>
                       <p>One - U2</p>
-                      <p>Perfect - Ed Sheeran</p>
+                      <div className="flex-box">
+                        <p>Perfect - Ed Sheeran</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={perfect}/>
+                        </audio>
+                      </div>
                       <p>Reckoning Song – Asaf Avidan</p>
                       <p>Say something – Christina Aguilera feat. A Great Big World</p>
                       <p>Scharlachrot  – Patent Ochsner</p>
-                      <p>Schwur - Sandee</p>
+                      <div className="flex-box">
+                        <p>Schwur - Sandee</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={schwur}/>
+                        </audio>
+                      </div>
                       <p>Shallow - Bradley Cooper & Lady Gaga</p>
                       <p>Skyfall – Adele</p>
                       <p>Someone like you - Adele</p>
@@ -62,8 +95,19 @@ export default function Repertoire() {
                       <p>Turpentine – Brandie Carlile</p>
                       <p>Umbrella – Baseballs</p>
                       <p>Wake me up – Avicii</p>
-                      <p>Where you lead – Carole King</p>
+                      <div className="flex-box">
+                        <p>Wish you were here - Pink Floyd</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={wish}/>
+                        </audio>
+                      </div>
                       <p>W. Nuss vo Bümpliz - Patent Ochsner</p>
+                      <div className="flex-box">
+                        <p>You raise me up - Josh Groban</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={youRaiseMeUp}/>
+                        </audio>
+                      </div>
                     </div>
                     <h2>Piano</h2>
                     <div class="columns">
@@ -80,6 +124,7 @@ export default function Repertoire() {
                       <p>Türkischer Marsch – Wolfgang Amadeus Mozart</p>
                       <p>Eigenkompositionen</p>
                     </div>
+                    <br></br>
                     <p>Haben Sie einen besonderen Lied-Wunsch? Gerne stellen wir ein individuelles Programm für Ihren Anlass zusammen und studieren die Songs speziell für Sie ein.</p>
                 </article>
             </main>

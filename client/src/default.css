@@ -274,6 +274,20 @@ main {
   margin: 0 0 5px 0;
 }
 
+.flex-box{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+
+}
+
+.audioPlayerRepertoire {
+    width: 240px;
+    height: 24px;
+    align-self: flex-start;
+    margin-bottom: 12px;
+}
+
 /***********************************************Aufnahmen****************************************************/
 
 .flex-container{
@@ -282,7 +296,6 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 100%;
-
 }
 
 .flex-container div{
@@ -299,6 +312,19 @@ iframe{
   font-size: 1.2em;
 }
 
+audio {
+    width: 300px;
+    height: 54px;
+}
+
+.audioPlayer {
+    width: 180px;
+    height: 24px;
+}
+
+video{
+  margin-bottom: 12px;
+}
 
 
 /***********************************************Kontakt****************************************************/
