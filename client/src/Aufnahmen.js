@@ -1,5 +1,13 @@
 import React from 'react';
 import './default.css';
+import dasBeste from './videos/das-beste.mp4';
+import schwur from './videos/schwur.mp4';
+import perfect from './videos/perfect.mp4';
+import aMoment from './videos/a-moment-like-this.mp4';
+import letschtAtemzug from './videos/letscht-atemzug.mp4';
+import heiterefahne from './videos/heiterefahne.mp4';
+import noise from './videos/i-have-a-voice.mp4';
+
 
 
 export default function Aufnahmen() {
@@ -10,24 +18,46 @@ export default function Aufnahmen() {
                 <h1>Aufnahmen</h1>
                   <div class="flex-container">
                     <div>
-                      <h2>Schwur – Sandee</h2>
-                      <iframe src="https://www.facebook.com/plugins/video.php?height=300&href=https%3A%2F%2Fwww.facebook.com%2Fpurple.d.music%2Fvideos%2F2259385090794849%2F" width="300" height="168" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                      <h2>A beautiful noise - A. Keys & B. Carlile</h2>
+                      <video width="350"  height="200" controls >
+                      <source src={noise} type="video/mp4"></source>
+                      </video>
+                    </div>
+                    <div>
+                      <h2>Schwur - Sandee</h2>
+                      <video width="350"  height="200" controls >
+                      <source src={schwur} type="video/mp4"></source>
+                      </video>
                     </div>
                     <div>
                       <h2>Perfect – Ed Sheeran</h2>
-                      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpurple.d.music%2Fvideos%2F654872731641620%2F" max-width="480" height="168" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                      <video width="350"  height="200" controls >
+                      <source src={perfect} type="video/mp4"></source>
+                      </video>
                     </div>
                     <div>
-                      <h2>Halleluja – Leonard Cohen</h2>
-                      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpurple.d.music%2Fvideos%2F1611163915654490%2F" max-width="480" height="168" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                      <h2>Das Beste – Silbermond</h2>
+                      <video width="350"  height="200" controls >
+                      <source src={dasBeste} type="video/mp4"></source>
+                      </video>
+                    </div>
+                    <div>
+                      <h2>A moment like this – Leona Lewis</h2>
+                      <video width="350"  height="200" controls >
+                      <source src={aMoment} type="video/mp4"></source>
+                      </video>
                     </div>
                     <div>
                       <h2>Letschte Atemzug – Trauffer</h2>
-                      <iframe src="https://www.facebook.com/plugins/video.php?height=300&href=https%3A%2F%2Fwww.facebook.com%2Fpurple.d.music%2Fvideos%2F2009199149325390%2F" max-width="300" height="168" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                      <video width="350"  height="200" controls >
+                      <source src={letschtAtemzug} type="video/mp4"></source>
+                      </video>
                     </div>
                     <div>
                       <h2>Heiterefahne – Trauffer</h2>
-                      <iframe max-width="480" height="168" src="https://www.youtube.com/embed/YkEoxxhtQi0" frameborder="0" allowfullscreen="true"></iframe>
+                      <video width="350"  height="200" controls >
+                      <source src={heiterefahne} type="video/mp4"></source>
+                      </video>
                     </div>
                   </div>
                 </article>

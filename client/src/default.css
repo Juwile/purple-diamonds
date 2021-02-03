@@ -274,6 +274,20 @@ main {
   margin: 0 0 5px 0;
 }
 
+.flex-box{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+
+}
+
+.audioPlayerRepertoire {
+    width: 240px;
+    height: 24px;
+    align-self: flex-start;
+    margin-bottom: 12px;
+}
+
 /***********************************************Aufnahmen****************************************************/
 
 .flex-container{
@@ -282,24 +296,35 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 100%;
-
 }
 
 .flex-container div{
   margin: 0 24px 0 0px;
-
-
 }
+
 iframe{
-  margin: 0 24px 0 0px;
+  margin: 0 24px 24px 0;
   display: flex;
-  overflow: hidden;
+
 }
 
 .flex-container h2{
   font-size: 1.2em;
 }
 
+audio {
+    width: 300px;
+    height: 54px;
+}
+
+.audioPlayer {
+    width: 180px;
+    height: 24px;
+}
+
+video{
+  margin-bottom: 12px;
+}
 
 
 /***********************************************Kontakt****************************************************/
@@ -307,23 +332,51 @@ iframe{
 form{
   display: flex;
   flex-direction: column;
-  padding: 0 48px 24px 0;
+  padding: 0 0 24px 0;
   max-width: 50%;
 }
 
 input{
   margin-bottom: 24px;
-  padding: 6px 6px 6px 6px;
+  padding: 12px 6px 12px 6px;
+  font-family: 'Work Sans', sans-serif, Times;
+  font-size: 0.9em;
 }
 
 textarea{
   padding: 6px 6px 96px 6px;
   margin: 0 0 48px 0;
+  font-family: 'Work Sans', sans-serif, Times;
+  font-size: 0.9em;
+  line-height: 1.5em;
 }
 
 form .button{
-  max-width: 30%;
+  max-width: 40%;
   background-color: transparent;
+}
+
+label{
+  padding-bottom: 2px;
+}
+
+.confirmation-box{
+  background-color: var(--lila);
+  color: var(--white);
+  padding: 12px;
+  margin: 24px 0 24px 0;
+  border: 1px solid;
+  max-width: 50%;
+}
+
+.confirmation-box h2{
+  font-size: 1.3em;
+  margin: 12px 0 12px 0;
+
+}
+
+.confirmation-box p{
+  margin: 6px 0 6px 0;
 }
 
 /***********************************************Links****************************************************/
@@ -400,6 +453,7 @@ display: none;
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
 background: var(--lila);
+padding: 1px;
 }
 
 /* Position and sizing of clickable cross button */
@@ -490,14 +544,34 @@ background: var(--lila);
 
   }
 
+/************Aufnahmen**********************/
+
+  iframe{
+    margin: 0 0px 24px 0;
+    display: flex;
+    max-width: 100%;
+  }
+
+  .hochformat{
+
+  }
+
+  .flex-container{
+  flex-direction: column;
+
+  }
+
+  .flex-container div{
+  margin: 0 0 0 0;
+  }
 
 
 
 }
 
 
-/***********************************************RWD 600px****************************************************/
-@media only screen and (max-width: 600px) {
+/***********************************************RWD 900px****************************************************/
+@media only screen and (max-width: 900px) {
 
 
 
@@ -555,8 +629,8 @@ background: var(--lila);
 
   .bm-burger-button {
     position: absolute;
-    width: 40px;
-    height: 12px;
+    width: 48px;
+    height: 20px;
     display: block;
     top: 40px;
     left: 5%;
@@ -566,6 +640,7 @@ background: var(--lila);
   .burger-container{
     display: block;
   }
+
 
 /***********************************************Home****************************************************/
 
@@ -593,6 +668,21 @@ background: var(--lila);
 
   .columns{
     column-count: 1;
+  }
+
+
+  /***********************************************Kontakt****************************************************/
+
+  form{
+    max-width: 100%;
+  }
+
+  form .button{
+    max-width: 50%;
+  }
+
+  .confirmation-box{
+    max-width: 100%;
   }
 
 
