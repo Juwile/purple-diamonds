@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './default.css';
-import logo from './logo.svg';
+import logo from './pictures/logo.svg';
 import insta from './pictos/insta.png'
 import facebook from './pictos/facebook.png'
 import BurgerMenu from "./BurgerMenu.js";
@@ -13,7 +13,7 @@ function NavBar() {
     return(
         <div>
             <header>
-                <NavLink to="/home"><img src={logo} alt="Logo" className="logo"/></NavLink>
+                <NavLink to="/home"><img src={logo} alt="Logo" className="logo" height="200"/></NavLink>
                 <nav className="navBar">
                     <ul className="nav-ul">
                         <li className="nav-li"><NavLink to="/angebot">Angebot</NavLink></li>
