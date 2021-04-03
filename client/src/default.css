@@ -30,7 +30,7 @@ body:after{
     left:0;
     right:0;
     z-index:-1; /* needed to keep in the background */
-    background: url('background_50.png');
+    background: url('./pictures/background_50.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -612,7 +612,7 @@ background: var(--lila);
   }*/
 
   body:after{
-    background-image: url('bg_mobile.png');
+    background-image: url('./pictures/bg_mobile.png');
     background-position: 0% 50%;
     background-size: 100%;
   }
@@ -670,6 +670,12 @@ background: var(--lila);
     column-count: 1;
   }
 
+  /***********************************************Aufnahmen****************************************************/
+
+video{
+  width: 100%;
+  margin-top: 12px;
+}
 
   /***********************************************Kontakt****************************************************/
 
