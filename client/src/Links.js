@@ -15,6 +15,7 @@ export default function Links() {
                     <h2>Musik</h2>
                     <p><a href="http://www.airwinsbigband.com/">AIRWIN's Big Band</a></p>
                     <p><a href="http://www.blaskapelle-nordsued.com/">Blaskapelle Nord Süd</a></p>
+                    <p><a href="https://www.nataschamaruschkamonney.ch/">Natascha & Maruschka Monney</a></p>
                 </article>
             </main>
         </div>
