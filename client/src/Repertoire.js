@@ -18,6 +18,7 @@ export default function Repertoire() {
                     <h2>Gesang und Piano</h2>
                     <div class="columns">
                       <div className="flex-box">
+                        <p>A thousand years - Christina Perri</p>
                         <p>A Beautiful Noise - Alicia Keys & Brandi Carlile</p>
                         <audio controls class="audioPlayerRepertoire">
                           <source src={iHaveAVoice}/>
@@ -36,15 +37,17 @@ export default function Repertoire() {
                       <p>Auf uns - Andreas Bourani</p>
                       <p>Bali - Florian Ast</p>
                       <p>Bridge over troubled water - Simon and Garfunkel</p>
-                      <p>Budapest – George Ezra</p>
                       <div className="flex-box">
                         <p>Das Beste - Silbermond</p>
                         <audio controls class="audioPlayerRepertoire">
                           <source src={dasBeste}/>
                         </audio>
                       </div>
+                      <p>Circle of Life - Elton John</p>
                       <p>Dr Himu brönnt - Gölä</p>
+                      <p>Ein Teil von meinem Herzen - Jonathan Zelter</p>
                       <p>Footprints in the sand - Leona Lewis</p>
+                      <p>Für immer uf di - Patent Ochsner</p>
                       <p>Halleluja - Leonard Cohan</p>
                       <p>Heaven - Gotthard</p>
                       <p>Heaven - Bryan Adams</p>
@@ -57,8 +60,8 @@ export default function Repertoire() {
                       <p>I was made for loving you - Ed Sheeran & Tori Kelly</p>
                       <p>Ich kenne nichts - Xavier Naidoo</p>
                       <p>Indianer - Gölä</p>
+                      <p>Ja - Silbermond</p>
                       <p>Jar of hearts – Christina Perri</p>
-                      <p>Just Be - Paloma Faith</p>
                       <p>Knockin’ on heaven’s door – Guns N’ Roses</p>
                       <p>Let it be - Beatles</p>
                       <p>Letschte Atemzug - Trauffer</p>
@@ -87,13 +90,11 @@ export default function Repertoire() {
                       <p>Skyfall – Adele</p>
                       <p>Someone like you - Adele</p>
                       <p>Stand by me – Ben E. King</p>
-                      <p>The hanging tree – Tribute von Panem</p>
                       <p>The Rose – Bette Midler</p>
                       <p>The story – Brandie Carlile</p>
                       <p>The winner takes it all – ABBA</p>
                       <p>This is the life – Amy Macdonald</p>
                       <p>Turpentine – Brandie Carlile</p>
-                      <p>Umbrella – Baseballs</p>
                       <p>Wake me up – Avicii</p>
                       <div className="flex-box">
                         <p>Wish you were here - Pink Floyd</p>
@@ -108,6 +109,7 @@ export default function Repertoire() {
                           <source src={youRaiseMeUp}/>
                         </audio>
                       </div>
+                      <p>You'll be in my heart - Phil Collins</p>
                     </div>
                     <h2>Piano</h2>
                     <div class="columns">
@@ -116,12 +118,10 @@ export default function Repertoire() {
                       <p>Comptine d'un autre été: L'après-midi (Amélie Poulin)</p>
                       <p>Forest Gump Theme</p>
                       <p>La valse d'Amélie (Amélie Poulin)</p>
-                      <p>Maple Leaf Rag – Scott Joplin</p>
                       <p>Nocturne Es-Dur – Frédéric Chopin</p>
                       <p>Pour Elise – Ludwig van Beethoven</p>
                       <p>River flows in you (Twilight)</p>
                       <p>Titanic Theme</p>
-                      <p>Türkischer Marsch – Wolfgang Amadeus Mozart</p>
                       <p>Eigenkompositionen</p>
                     </div>
                     <br></br>
