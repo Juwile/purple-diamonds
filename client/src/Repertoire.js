@@ -7,6 +7,15 @@ import perfect from './audio/perfect.mp3';
 import youRaiseMeUp from './audio/you-raise-me-up.mp3';
 import iHaveAVoice from './audio/i-have-a-voice.mp3';
 import dasBeste from './audio/das-beste.mp3';
+import aThousandYears from './audio/A thousand years.mp3';
+import alwaysRemember from './audio/Always remember us this way.mp3';
+import drHimmu from './audio/Dr himmu brönnt.mp3';
+import ehrenwort from './audio/Ehrenwort.mp3';
+import onlyOne from './audio/Im not the only one.mp3';
+import listenHeart from './audio/Listen to your heart.mp3';
+import scharlach from './audio/Scharlachrot.mp3';
+import theWinner from './audio/The winner takes it all.mp3';
+import stillTheOne from './audio/Youre still the one.mp3';
 
 
 export default function Repertoire() {
@@ -19,6 +28,11 @@ export default function Repertoire() {
                     <div class="columns">
                       <div className="flex-box">
                         <p>A thousand years - Christina Perri</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={aThousandYears}/>
+                        </audio>
+                      </div>
+                      <div className="flex-box">
                         <p>A Beautiful Noise - Alicia Keys & Brandi Carlile</p>
                         <audio controls class="audioPlayerRepertoire">
                           <source src={iHaveAVoice}/>
@@ -32,6 +46,9 @@ export default function Repertoire() {
                         </audio>
                       </div>
                       <p>Always remember us this way - Bradley Cooper & Lady Gaga</p>
+                      <audio controls class="audioPlayerRepertoire">
+                          <source src={alwaysRemember}/>
+                        </audio>
                       <p>Applaus, Applaus - Sportfreunde Stiller</p>
                       <p>An Tagen wie diesen – Die Toten Hosen</p>
                       <p>Auf uns - Andreas Bourani</p>
@@ -44,7 +61,18 @@ export default function Repertoire() {
                         </audio>
                       </div>
                       <p>Circle of Life - Elton John</p>
-                      <p>Dr Himu brönnt - Gölä</p>
+                      <div className="flex-box">
+                        <p>Dr Himu brönnt - Gölä</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={drHimmu}/>
+                        </audio>
+                      </div>
+                      <div className="flex-box">
+                        <p>Ehrenwort - Fäaschtbänkler</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={ehrenwort}/>
+                        </audio>
+                      </div>
                       <p>Ein Teil von meinem Herzen - Jonathan Zelter</p>
                       <p>Footprints in the sand - Leona Lewis</p>
                       <p>Für immer uf di - Patent Ochsner</p>
@@ -56,6 +84,12 @@ export default function Repertoire() {
                       <p>Hit the road Jack – Ray Charles</p>
                       <p>High Hopes - Kodaline</p>
                       <p>Ich schwöru - Sina & Büne Huber</p>
+                      <div className="flex-box">
+                        <p>I'm not the only one - Sam Smith</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={onlyOne}/>
+                        </audio>
+                      </div>
                       <p>I see fire – Ed Sheeran</p>
                       <p>I was made for loving you - Ed Sheeran & Tori Kelly</p>
                       <p>Ich kenne nichts - Xavier Naidoo</p>
@@ -65,7 +99,12 @@ export default function Repertoire() {
                       <p>Knockin’ on heaven’s door – Guns N’ Roses</p>
                       <p>Let it be - Beatles</p>
                       <p>Letschte Atemzug - Trauffer</p>
-                      <p>Listen to your heart - Roxette</p>
+                      <div className="flex-box">
+                        <p>Listen to your heart - Roxette</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={listenHeart}/>
+                        </audio>
+                      </div>
                       <p>Die Liebe zur Natur – Lennon & Maisy</p>
                       <p>Million Reasons - Lady Gaga</p>
                       <p>No matter where you are - Us The Duo</p>
@@ -79,7 +118,12 @@ export default function Repertoire() {
                       </div>
                       <p>Reckoning Song – Asaf Avidan</p>
                       <p>Say something – Christina Aguilera feat. A Great Big World</p>
-                      <p>Scharlachrot  – Patent Ochsner</p>
+                      <div className="flex-box">
+                        <p>Scharlachrot  – Patent Ochsner</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={scharlach}/>
+                        </audio>
+                      </div>
                       <div className="flex-box">
                         <p>Schwur - Sandee</p>
                         <audio controls class="audioPlayerRepertoire">
@@ -92,7 +136,12 @@ export default function Repertoire() {
                       <p>Stand by me – Ben E. King</p>
                       <p>The Rose – Bette Midler</p>
                       <p>The story – Brandie Carlile</p>
-                      <p>The winner takes it all – ABBA</p>
+                      <div className="flex-box">
+                        <p>The winner takes it all – ABBA</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={theWinner}/>
+                        </audio>
+                      </div>
                       <p>This is the life – Amy Macdonald</p>
                       <p>Turpentine – Brandie Carlile</p>
                       <p>Wake me up – Avicii</p>
@@ -107,6 +156,12 @@ export default function Repertoire() {
                         <p>You raise me up - Josh Groban</p>
                         <audio controls class="audioPlayerRepertoire">
                           <source src={youRaiseMeUp}/>
+                        </audio>
+                      </div>
+                      <div className="flex-box">
+                        <p>You're still the one - Shania Twain</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={stillTheOne}/>
                         </audio>
                       </div>
                       <p>You'll be in my heart - Phil Collins</p>
