@@ -2,13 +2,13 @@ import React from 'react';
 import './default.css';
 import wish from './audio/wish-you-were-here.mp3';
 import aMomentLikeThis from './audio/a-moment-like-this.mp3';
-import schwur from './audio/schwur.mp3';
+import schwur from './audio/Schwur.mp3';
 import perfect from './audio/perfect.mp3';
 import youRaiseMeUp from './audio/you-raise-me-up.mp3';
 import iHaveAVoice from './audio/i-have-a-voice.mp3';
 import dasBeste from './audio/das-beste.mp3';
 import aThousandYears from './audio/A thousand years.mp3';
-import alwaysRemember from './audio/Always remember us this way.mp3';
+import alwaysRemember from './audio/Always remember us.mp3';
 import drHimmu from './audio/Dr himmu brönnt.mp3';
 import ehrenwort from './audio/Ehrenwort.mp3';
 import onlyOne from './audio/Im not the only one.mp3';
@@ -16,6 +16,9 @@ import listenHeart from './audio/Listen to your heart.mp3';
 import scharlach from './audio/Scharlachrot.mp3';
 import theWinner from './audio/The winner takes it all.mp3';
 import stillTheOne from './audio/Youre still the one.mp3';
+import bridge from './audio/Bridge over Troubled Water.mp3';
+import immerUfDi from './audio/Für immer uf Di.mp3';
+import hemmigslos from './audio/Hemmigslos liebe.mp3';
 
 
 export default function Repertoire() {
@@ -53,7 +56,12 @@ export default function Repertoire() {
                       <p>An Tagen wie diesen – Die Toten Hosen</p>
                       <p>Auf uns - Andreas Bourani</p>
                       <p>Bali - Florian Ast</p>
-                      <p>Bridge over troubled water - Simon and Garfunkel</p>
+                      <div className="flex-box">
+                        <p>Bridge over troubled water - Simon and Garfunkel</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={bridge}/>
+                        </audio>
+                      </div>
                       <div className="flex-box">
                         <p>Das Beste - Silbermond</p>
                         <audio controls class="audioPlayerRepertoire">
@@ -75,12 +83,22 @@ export default function Repertoire() {
                       </div>
                       <p>Ein Teil von meinem Herzen - Jonathan Zelter</p>
                       <p>Footprints in the sand - Leona Lewis</p>
-                      <p>Für immer uf di - Patent Ochsner</p>
+                      <div className="flex-box">
+                        <p>Für immer uf di - Patent Ochsner</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={immerUfDi}/>
+                        </audio>
+                      </div>
                       <p>Halleluja - Leonard Cohan</p>
                       <p>Heaven - Gotthard</p>
                       <p>Heaven - Bryan Adams</p>
                       <p>Heiterefahne - Trauffer</p>
-                      <p>Hemmigslos Liebe - Fabienne Louves, Marc Sway</p>
+                      <div className="flex-box">
+                        <p>Hemmigslos Liebe - Fabienne Louves, Marc Sway</p>
+                        <audio controls class="audioPlayerRepertoire">
+                          <source src={hemmigslos}/>
+                        </audio>
+                      </div>
                       <p>Hit the road Jack – Ray Charles</p>
                       <p>High Hopes - Kodaline</p>
                       <p>Ich schwöru - Sina & Büne Huber</p>
@@ -133,7 +151,6 @@ export default function Repertoire() {
                       <p>Shallow - Bradley Cooper & Lady Gaga</p>
                       <p>Skyfall – Adele</p>
                       <p>Someone like you - Adele</p>
-                      <p>Stand by me – Ben E. King</p>
                       <p>The Rose – Bette Midler</p>
                       <p>The story – Brandie Carlile</p>
                       <div className="flex-box">
