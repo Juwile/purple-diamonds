@@ -2,7 +2,7 @@ import React from 'react';
 import './default.css';
 import wish from './audio/wish-you-were-here.mp3';
 import aMomentLikeThis from './audio/a-moment-like-this.mp3';
-import schwur from './audio/Schwur.mp3';
+import schwur from './audio/schwur.mp3';
 import perfect from './audio/perfect.mp3';
 import youRaiseMeUp from './audio/you-raise-me-up.mp3';
 import iHaveAVoice from './audio/i-have-a-voice.mp3';
