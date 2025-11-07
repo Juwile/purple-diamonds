@@ -2,7 +2,7 @@ import React from 'react';
 import './default.css';
 import equipment from './pictures/gesang-piano.jpg'
 
-export default function Angebot() {
+export default function Hochzeiten() {
     return (
       <div>
         <main>
