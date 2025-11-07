@@ -8,8 +8,8 @@ export default function Home() {
         <div>
         <main>
             <article className="rectangle home">
-                <h1>Piano und Gesang für Ihren Event</h1>
-                <p class="lead">Ob Hochzeit, Taufe oder Feier jeglicher Art! Wir freuen uns, Ihren Anlass zu einem besonderen Moment werden zu lassen und ihn musikalisch zu untermalen.</p>
+                <h1>Piano und Gesang für Deinen Event</h1>
+                <p class="lead">Ob Hochzeit, Taufe oder Feier jeglicher Art! Wir freuen uns, Deinen Anlass zu einem unvergesslichen Moment zu machen – mit Musik, die von Herzen kommt.</p>
                 <div class="teaser-container">
                   <div class="teaser">
                     <div class="diamond">
@@ -25,7 +25,7 @@ export default function Home() {
                       <img src={img3} alt="avatar"></img>
                     </div>
                     <h2>Aufnahmen</h2>
-                    <p class="teaser-text">Hörprobe gefällig? Stöbern Sie durch unsere Aufnahmen und machen Sie sich ein Bild.
+                    <p class="teaser-text">Hörprobe gefällig? Stöbere durch unsere Aufnahmen und mach dir selbst ein Bild.
                     </p>
                     <a className="button" href="/aufnahmen">Jetzt reinhören</a>
                   </div>
@@ -34,7 +34,7 @@ export default function Home() {
                       <img src={img2} alt="avatar"></img>
                     </div>
                     <h2>Repertoire</h2>
-                    <p class="teaser-text">Einzigartige und auf Ihre Wünsche abgestimmte Liedarrangements speziell für Hochzeiten.
+                    <p class="teaser-text">Einzigartige Liedarrangements – individuell auf deine Wünsche abgestimmt, speziell für Hochzeiten.
                     </p>
                     <a className="button" href="/repertoire">Mehr Infos</a>
                   </div>
