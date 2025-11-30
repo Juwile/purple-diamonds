@@ -11,7 +11,7 @@ export default function About() {
             <main>
                 <article className="rectangle">
                     <h1>Zwei Senslerinnen in ihrem Element</h1>
-                    <p class="lead">Wir sind beide passionierte Musikerinnen aus dem Kanton Freiburg und machen schon seit etlichen Jahren in diversen Formationen Musik. Bei Purple Diamonds verzaubern wir Sie mit Gesang und Piano Klängen.</p>
+                    <p class="lead">Wir sind zwei passionierte Musikerinnen aus dem Kanton Freiburg und machen seit vielen Jahren in verschiedenen Formationen Musik. Bei Purple Diamonds verzaubern wir dich mit warmem Gesang und klangvollem Piano.</p>
                     <div className="flex-about">
                         <div>
                             <h2>Tabea Kolly</h2>

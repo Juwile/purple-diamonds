@@ -10,7 +10,7 @@ body {
     font-family: 'Work Sans', sans-serif, Times;
     font-size: 1.1em;
     line-height: 1.5;
-    font-weight: 200;
+    font-weight: 400;
     --purple: #4C2157;
     --bg-blue: #d7ddf1;
     --bg-rose: #f8e5f1;
@@ -30,7 +30,7 @@ body:after{
     left:0;
     right:0;
     z-index:-1; /* needed to keep in the background */
-    background: url('./pictures/background_50.png');
+    background: url('./pictures/background_50.png');      
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,13 +60,11 @@ a{
     cursor: pointer;
 }
 
-
 a:link{
     text-decoration: none;
     cursor: pointer;
 
 }
-
 
 a:visited{
     color: var(--purple);
@@ -79,18 +77,11 @@ a:hover{
   cursor: pointer;
 }
 
-
 a:focus{
   color: var(--purple);
   cursor: pointer;
 
 }
-
-
-
-
-
-
 
 h1{
     font-size: 2.1em;
@@ -110,8 +101,13 @@ h2 {
 
 }
 
+h3 {
+   margin: 12px 0 6px 0;
+
+}
+
 p{
-  margin: 12px 0 12px 0;
+  margin: 6px 0 6px 0;
 }
 
 .lead{
@@ -499,9 +495,9 @@ background: var(--lila);
 
 /* Abschnitt-Rahmen */
 .section {
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(0,0,0,0.06);
+  margin-top: 24px;
+
+
 }
 
 .bullets {
@@ -514,7 +510,7 @@ background: var(--lila);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  margin-top: 16px;
+  margin-top: 24px;
 
   /* Einheitliche Höhen definieren */
   --card-title-min-height: 2em;   /* reicht für 1–2 Zeilen Titel */
@@ -543,7 +539,6 @@ background: var(--lila);
 
 /* Titel & Intro-Höhen angleichen */
 .card h3 {
-  margin: 0 0 8px 0;
   color: var(--purple);
   font-size: 1.15em;
   min-height: var(--card-title-min-height);
@@ -626,7 +621,7 @@ background: var(--lila);
 .btn,
 .cta {
   background: transparent;
-  color: var(--purple);
+  color: var(--white);
   border: 1px solid var(--purple);
 }
 
@@ -650,11 +645,12 @@ background: var(--lila);
 /* === Technik-/Extra-Block === */
 .feature-block {
   margin-top: 24px;
-  padding: 16px 18px;
+  padding: 6px 18px;
   border: 1px solid rgba(0,0,0,0.06);
   border-radius: 12px;
   background: rgba(255,255,255,0.7);
 }
+
 
 /* === Ablauf/Steps === */
 .steps {

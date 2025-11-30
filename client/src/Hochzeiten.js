@@ -11,27 +11,21 @@ export default function Hochzeiten() {
           <h1>Musik, Worte und Emotion</h1>
 
           <p className="lead">
-            Wir begleiten deinen grossen Tag mit Live-Musik – bei der Trauung, beim
+            Wir begleiten euren grossen Tag mit Live-Musik – bei der Trauung, beim
             Apéro oder als stimmungsvolles Highlight am Abend.
           </p>
           <p className="lead">
-            Wenn du dir für deine Zeremonie etwas ganz Persönliches wünschst,
+            Wenn ihr euch für die Zeremonie etwas ganz Persönliches wünschst,
             bieten wir auch eine Kombination aus Traurede und Live-Musik an – ein
             harmonisches Gesamtpaket, das Emotionen weckt und lange in Erinnerung
             bleibt.
           </p>
-          <p className="lead">
-            So entsteht ein Moment, der euch wirklich widerspiegelt – echt,
-            individuell und mit Herz.
-          </p>
 
           {/* SECTION — Alle Angebote */}
           <section id="angebote" className="section">
-            <h2>Unsere Angebote rund um deine Hochzeit</h2>
+            <h2>Unsere Angebote rund um eure Hochzeit</h2>
             <p>
-              Wähle das passende Angebot für deinen besonderen Tag – von der
-              musikalischen Begleitung bis zum Gesamtpaket mit persönlicher
-              Traurede. Alle Auftritte sind 100 % live, stilvoll und mit viel Herz
+              Wähle das passende Angebot für deinen besonderen Tag. Alle Auftritte sind 100 % live, stilvoll und mit viel Herz
               gestaltet.
             </p>
 
@@ -52,17 +46,15 @@ export default function Hochzeiten() {
                 </ul>
                 <div className="pricebox">
                   <p>
-                    <strong>Gesamtpaket:</strong> ab CHF ___
+                    <strong>Preis:</strong> ab CHF 2'190.–
                   </p>
-                  <a className="btn btn-primary" href="/kontakt">
-                    Jetzt anfragen
-                  </a>
+                  
                 </div>
               </div>
 
               {/* Card 2: Musik an der Trauung */}
               <div className="card">
-                <h3>Musik an der Trauung</h3>
+                <h3>Musik an der Zeremonie</h3>
                 <p>
                   Live-Gesang und Klavier für die Zeremonie – vom Einzug über den
                   Ringtausch bis zum Auszug. Wir gestalten die Musik ganz nach euren
@@ -71,15 +63,13 @@ export default function Hochzeiten() {
                 <ul className="bullets">
                   <li>Individuelle Liedauswahl</li>
                   <li>100 % live – kein Playback</li>
-                  <li>Technik inklusive</li>
+                  <li>Auf Wunsch eigene Songs – euer Lieblingslied neu einstudiert oder komplett neu komponiert</li>
                 </ul>
                 <div className="pricebox">
                   <p>
-                    <strong>Preis:</strong> ab CHF ___
+                    <strong>Preis:</strong> ab CHF 790.–
                   </p>
-                  <a className="btn" href="/kontakt">
-                    Anfrage senden
-                  </a>
+                  
                 </div>
               </div>
 
@@ -87,22 +77,18 @@ export default function Hochzeiten() {
               <div className="card">
                 <h3>Musik am Apéro</h3>
                 <p>
-                  Beschwingte Live-Musik als stilvoller Rahmen für euren Empfang –
-                  dezent im Hintergrund oder mit kleinen Highlights, ganz wie ihr
-                  möchtet.
+                  Dezente Melodien im Hintergrund – romantisch, warm und perfekt, um euer Apéro stilvoll zu begleiten.
                 </p>
                 <ul className="bullets">
-                  <li>Pop, Soul, Jazz & romantische Balladen</li>
-                  <li>Setdauer flexibel (z. B. 2 × 40 Minuten)</li>
-                  <li>Dezentes Setup & schneller Aufbau</li>
+                  <li>Pop, Mundart & Balladen aus unserem Repertoire</li>
+                  <li>Setdauer flexibel (z.B. 3 × 30 Minuten) aufgeteilt auf 2h</li>
+                  <li>Beschallung angepasst an eure Location – drinnen wie draussen</li>
                 </ul>
                 <div className="pricebox">
                   <p>
-                    <strong>Preis:</strong> ab CHF ___
+                    <strong>Preis:</strong> ab CHF 990.–
                   </p>
-                  <a className="btn" href="/kontakt">
-                    Anfrage senden
-                  </a>
+              
                 </div>
               </div>
 
@@ -110,9 +96,7 @@ export default function Hochzeiten() {
               <div className="card">
                 <h3>Kombi: Trauung & Apéro</h3>
                 <p>
-                  Zeremonie und Apéro musikalisch begleitet – alles aus einer Hand
-                  und perfekt aufeinander abgestimmt. Harmonisch, professionell und
-                  stressfrei.
+                  Zeremonie und Apéro aus einer Hand – schön aufeinander abgestimmt, unkompliziert und für dich ganz entspannt.
                 </p>
                 <ul className="bullets">
                   <li>Trauung + Apéro-Sets</li>
@@ -121,11 +105,9 @@ export default function Hochzeiten() {
                 </ul>
                 <div className="pricebox">
                   <p>
-                    <strong>Preis Paket:</strong> ab CHF ___
+                    <strong>Preis Paket:</strong> ab CHF 1'290.–
                   </p>
-                  <a className="btn" href="/kontakt">
-                    Anfrage senden
-                  </a>
+                  
                 </div>
               </div>
 
@@ -133,39 +115,57 @@ export default function Hochzeiten() {
               <div className="card">
                 <h3>Musik am Abend</h3>
                 <p>
-                  Sanfte Dinner-Musik oder stimmungsvolle Live-Sets am Abend – wir
+                  Ruhige Dinner-Musik oder stimmungsvolle Live-Sets am Abend – wir
                   schaffen Atmosphäre, die euren Ausklang besonders macht.
                 </p>
                 <ul className="bullets">
-                  <li>Dinner- oder Lounge-Sets</li>
-                  <li>Repertoire flexibel erweiterbar</li>
+                  <li>Individuelle Sets, auch Instrumental möglich</li>
+                  <li>Setdauer flexibel (z.B. 3 × 30 Minuten) aufgeteilt auf 2h</li>
                   <li>Individuelle Songwünsche möglich</li>
                 </ul>
                 <div className="pricebox">
                   <p>
-                    <strong>Preis:</strong> ab CHF ___
+                    <strong>Preis:</strong> ab CHF 990.–
                   </p>
-                  <a className="btn" href="/kontakt">
-                    Anfrage senden
-                  </a>
+                 
+                </div>
+              </div>
+              <div className="card">
+                <h3>Musik als Geschenk</h3>
+                <p>
+                Eine persönliche musikalische Einlage als besonderes Geschenk für das Brautpaar – berührend und unvergesslich.
+                </p>
+                <ul className="bullets">
+                  <li>Überraschungsmoment garantiert – ob am Apéro oder am Abend</li>
+                  <li>Möchtest du gemeinsam mit uns ein Lied singen? Wir bereiten alles zusammen vor und begleiten dich sicher durch den Auftritt</li>
+                </ul>
+                <div className="pricebox">
+                  <p>
+                    <strong>Preis:</strong> ab CHF 790.–
+                  </p>
+                  
                 </div>
               </div>
             </div>
 
             {/* Technik & Extra */}
             <div className="feature-block">
-              <h4>Klangvoll – egal, wo du feierst</h4>
+              <h2>Im Preis inbegriffen</h2>
+              <h3>Vorgespräch Zeremonie</h3>
+              <p>Ein persönliches Vorgespräch ist bei uns immer inbegriffen – egal, ob ihr "nur" Musik an der Trauung bucht oder unser Kombi-Angebot mit Traurede nutzt. Bei der Variante mit Traurede findet je nach Bedarf sogar ein zweites Treffen statt.</p>
+              <p>Uns ist wichtig, euch als Paar kennenzulernen: eure Geschichte, euren Stil und eure Wünsche. So können wir euch individuell beraten und dafür sorgen, dass wir uns nicht erst am Hochzeitstag zum ersten Mal sehen. Durch diesen Austausch entsteht eine entspannte Basis und wir können die Musik perfekt auf euch abstimmen.</p>
+              <p>Dank über 10 Jahren Erfahrung geben wir euch auch Tipps zum Ablauf der Zeremonie. Gemeinsam hören wir uns Auszüge aus unserem Repertoire an und wählen aus, was wirklich zu euch passt.</p>
+              <p>Wünscht ihr euch ein Lied, das nicht in unserem Repertoire ist, studieren wir es gerne für euch ein. Dafür berechnen wir einen Zuschlag von CHF 50.              
+              </p>
+              <h3>Equipment </h3>
               <p>
-                Wir bringen unser E-Piano und eine vollständige Soundanlage mit und
+                Klangvoll – egal, wo du feierst. Wir bringen unser E-Piano und eine vollständige Soundanlage mit und
                 passen uns flexibel an jede Umgebung an – drinnen wie draussen. Eine
                 Stromquelle genügt – und wir sind startklar.
               </p>
-
-              <h4>Dein Hochzeitslied – individuell komponiert</h4>
+              <h3>Fahrspesen </h3>
               <p>
-                Auf Wunsch komponieren wir euer persönliches Lied – einzigartig wie
-                ihr. Ob mit eigenem Text oder komplett frei – so entsteht ein Song,
-                der euch gehört.
+                Im Kanton Freiburg und Bern sind die Fahrspesen inbegriffen. Für weitere Distanzen berechnen wir 1 CHF pro Kilometer.
               </p>
             </div>
           </section>
@@ -173,9 +173,9 @@ export default function Hochzeiten() {
           {/* Abschluss-CTA */}
           <section className="section section-cta">
             <h2>Bereit für euren besonderen Moment?</h2>
-            <p>
+            <p className="lead">
               Wir freuen uns, eure Geschichte in Musik und Worten zum Leben zu
-              erwecken. Schreibt uns für ein unverbindliches Erstgespräch.
+              erwecken.
             </p>
             <a className="btn btn-primary" href="/kontakt">
               Jetzt anfragen
