@@ -1,95 +1,127 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './default.css';
 
-class googleForm extends Component {
-
+class GoogleForm extends Component {
   constructor(props) {
-        super(props);
+    super(props);
 
-        this.state = { // initial state
-            vorname:'',
-            nachname:'',
-            anfrage:'',
-            email:''
+    this.state = {
+      vorname: '',
+      nachname: '',
+      email: '',
+      anfrage: '',
+      showBox: false,
+    };
 
-        }
-        console.log(this.state)
-        this.submitForm = this.submitForm.bind(this);
-    }
+    this.submitForm = this.submitForm.bind(this);
+  }
 
   submitForm(e) {
     e.preventDefault();
 
-    var querystring = require('querystring') // to turn json into x-www-form-urlencoded format
+    // Google Forms Feld-IDs (aus Prefill-Link)
+    const formData = new URLSearchParams();
+    formData.append('entry.1284592876', this.state.vorname);   // Vorname
+    formData.append('entry.1474834856', this.state.nachname); // Nachname
+    formData.append('entry.1088136659', this.state.email);    // Email
+    formData.append('entry.1229545334', this.state.anfrage);  // Anfrage
 
-    var payload = querystring.stringify(this.state);
-
-    var finish1 = payload.replace("vorname", "entry.2005620554");
-    var finish2 = finish1.replace("nachname", "entry.1676888878");
-    var finish3 = finish2.replace("email", "emailAddress" );
-    var finish4 = finish3.replace("anfrage", "entry.839337160");
-
-    console.log(finish4);
-
-    // Simple POST request with a JSON body using fetch
-    const requestOptions = {
+    fetch(
+      'https://docs.google.com/forms/d/e/1FAIpQLSc8W4aN8M-GkLSI5eDmIIPzoWRw_n-KAUhIJ9dck_E7SoLmUg/formResponse',
+      {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: finish4
-    };
-    fetch('https://docs.google.com/forms/u/1/d/e/1FAIpQLSfcvlskqOm0I0OUCy-u00grZ61T9Zm8LYpr8hpZPgPcQsJ7vg/formResponse', requestOptions)
-        .then(response => response.json())
-        .then(data => this.setState({ postId: data.id }));
+        mode: 'no-cors', // wichtig für Google Forms
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: formData.toString(),
+      }
+    );
 
-    const frm = document.getElementById('kontakt');
-    frm.reset();
+    // Formular leeren + Bestätigung anzeigen
+    this.setState({
+      vorname: '',
+      nachname: '',
+      email: '',
+      anfrage: '',
+      showBox: true,
+    });
+
+    // Bestätigung nach 8 Sekunden ausblenden
+    setTimeout(() => {
+      this.setState({ showBox: false });
+    }, 8000);
   }
 
-  displayConfirmationBox(){
-        setTimeout(() => (
-            this.setState( () => ({
-                showBox: false
-            }))),50000);
-        return(
-            <div className="confirmation-box">
+  render() {
+    return (
+      <div>
+        <main>
+          <article className="rectangle">
+            <h1>Kontakt</h1>
+
+            <form id="kontakt" onSubmit={this.submitForm}>
+              <label htmlFor="Vorname">Vorname</label>
+              <input
+                type="text"
+                id="Vorname"
+                value={this.state.vorname}
+                onChange={(e) =>
+                  this.setState({ vorname: e.target.value })
+                }
+                required
+              />
+
+              <label htmlFor="Nachname">Nachname</label>
+              <input
+                type="text"
+                id="Nachname"
+                value={this.state.nachname}
+                onChange={(e) =>
+                  this.setState({ nachname: e.target.value })
+                }
+                required
+              />
+
+              <label htmlFor="Email">Email</label>
+              <input
+                type="email"
+                id="Email"
+                value={this.state.email}
+                onChange={(e) =>
+                  this.setState({ email: e.target.value })
+                }
+                required
+              />
+
+              <label htmlFor="Anfrage">Anfrage</label>
+              <textarea
+                id="Anfrage"
+                value={this.state.anfrage}
+                onChange={(e) =>
+                  this.setState({ anfrage: e.target.value })
+                }
+                required
+              />
+
+              <button className="button" type="submit">
+                Absenden
+              </button>
+            </form>
+
+            {this.state.showBox && (
+              <div className="confirmation-box">
                 <h2>Besten Dank für Ihre Anfrage.</h2>
                 <p>Wir melden uns schnellstmöglich.</p>
                 <p>Liebe Grüsse</p>
                 <p>Purple Diamonds</p>
-            </div>
-        )
-    }
-
-  render() {
-      return(
-          <div>
-          <main>
-              <article className="rectangle">
-              <h1>Kontakt</h1>
-              <form id="kontakt" onSubmit={this.submitForm}>
-                  <label for="Vorname">Vorname</label>
-                  <input type="text" id="Vorname" name="Vorname" onChange={ (e) => this.setState({ vorname:e.target.value})}/>
-                  <label for="Nachname">Nachname</label>
-                  <input type="text" id="Nachname" name="Nachname" onChange={ (e) => this.setState({ nachname:e.target.value})}/>
-                  <label for="Email">Email</label>
-                  <input type="text" id="email" name="email" onChange={ (e) => this.setState({ email:e.target.value})}/>
-                  <label>Anfrage</label>
-                  <textarea type="text" id="Anfrage" name="Anfrage" onChange={ (e) => this.setState({ anfrage:e.target.value})}/>
-                  <button class="button" onClick={ () => this.setState( () => ({showBox: true}))}>Absenden</button>
-                </form>
-                <div>
-                      { this.state.showBox ? this.displayConfirmationBox() : null }
-                </div>
-              </article>
-          </main>
-          </div>
-      );
+              </div>
+            )}
+          </article>
+        </main>
+      </div>
+    );
   }
 }
 
-
-
-export default (googleForm);
-
-//<iframe class="hide-on-small" src="https://docs.google.com/forms/d/e/1FAIpQLSfcvlskqOm0I0OUCy-u00grZ61T9Zm8LYpr8hpZPgPcQsJ7vg/viewform?embedded=true" width="640" height="808" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-//<iframe class="hide-on-large"src="https://docs.google.com/forms/d/e/1FAIpQLSfcvlskqOm0I0OUCy-u00grZ61T9Zm8LYpr8hpZPgPcQsJ7vg/viewform?embedded=true" width="280" height="1200" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+export default GoogleForm;

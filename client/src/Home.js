@@ -15,10 +15,10 @@ export default function Home() {
                     <div class="diamond">
                       <img src={img1} alt="avatar"></img>
                     </div>
-                    <h2>Über uns</h2>
+                    <h2>Angebot</h2>
                     <p class="teaser-text">Schöne Pianobegleitung und harmonische Zweistimmigkeit mit viel Herz!
                     </p>
-                    <a className="button" href="/ueber-uns">Mehr erfahren</a>
+                    <a className="button" href="/angebot">Mehr erfahren</a>
                   </div>
                   <div class="teaser">
                     <div class="diamond">
@@ -34,7 +34,7 @@ export default function Home() {
                       <img src={img2} alt="avatar"></img>
                     </div>
                     <h2>Repertoire</h2>
-                    <p class="teaser-text">Einzigartige Liedarrangements – individuell auf deine Wünsche abgestimmt, speziell für Hochzeiten.
+                    <p class="teaser-text">Einzigartige Liedarrangements – individuell auf deine Wünsche abgestimmt.
                     </p>
                     <a className="button" href="/repertoire">Mehr Infos</a>
                   </div>

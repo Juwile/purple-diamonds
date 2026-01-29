@@ -19,8 +19,7 @@ export default function Contents() {
             <Redirect exact from="/" to="/home"/>
             <Route path="/home" component={Home} />
             <Route path="/ueber-uns" component={About} />
-            <Route path="/hochzeiten" component={Hochzeiten} />
-            <Route path="/events" component={Events} />
+            <Route path="/angebot" component={Hochzeiten} />
             <Route path="/repertoire" component={Repertoire} />
             <Route path="/aufnahmen" component={Aufnahmen} />
             <Route path="/kontakt" component={Kontakt} />

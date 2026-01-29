@@ -141,7 +141,7 @@ export default function Hochzeiten() {
                 </ul>
                 <div className="pricebox">
                   <p>
-                    <strong>Preis:</strong> ab CHF 790.–
+                    <strong>Preis:</strong> auf Anfrage
                   </p>
                   
                 </div>
@@ -165,7 +165,7 @@ export default function Hochzeiten() {
               </p>
               <h3>Fahrspesen </h3>
               <p>
-                Im Kanton Freiburg und Bern sind die Fahrspesen inbegriffen. Für weitere Distanzen berechnen wir 1 CHF pro Kilometer.
+                Im Kanton Freiburg sind die Fahrspesen inbegriffen. Für weitere Distanzen berechnen wir 1 CHF pro Kilometer.
               </p>
             </div>
           </section>

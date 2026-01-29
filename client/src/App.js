@@ -16,8 +16,7 @@ function NavBar() {
                 <NavLink to="/home"><img src={logo} alt="Logo" className="logo" height="200"/></NavLink>
                 <nav className="navBar">
                     <ul className="nav-ul">
-                        <li className="nav-li"><NavLink to="/hochzeiten">Hochzeiten</NavLink></li>
-                        <li className="nav-li"><NavLink to="/events">Events</NavLink></li>
+                        <li className="nav-li"><NavLink to="/angebot">Angebot</NavLink></li>
                         <li className="nav-li"><NavLink to="/repertoire">Repertoire</NavLink></li>
                         <li className="nav-li"><NavLink to="/aufnahmen">Aufnahmen</NavLink></li>
                         <li className="nav-li"><NavLink to="/ueber-uns">Über uns</NavLink></li>
