@@ -16,6 +16,7 @@ export default function Events() {
             </p>
             
             <section className="angebot-section">
+
               <h2>2. Musikalische Begleitung</h2>
               <h3>Live-Musik, die berührt</h3>
   

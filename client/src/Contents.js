@@ -6,7 +6,6 @@ import Repertoire from './Repertoire.js';
 import Kontakt from './Kontakt.js';
 import About from './About.js';
 import Aufnahmen from './Aufnahmen.js';
-import Vorteile from './Events.js';
 import Links from './Links.js';
 import Hochzeiten from './Hochzeiten.js';
 import Events from './Events.js';

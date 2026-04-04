@@ -33,10 +33,10 @@ function Footer() {
     return(
         <div>
             <footer>
-            <div class="contact">
+            <div className="contact">
               <p>Purple Diamonds  |  <a href="mailto:purple.d.music@gmail.com">purple.d.music@gmail.com</a></p>
             </div>
-            <div class="socialMedia">
+            <div className="socialMedia">
               <a href="https://www.instagram.com/___purplediamonds___/"><img src={insta} alt="Instagram"/></a>
               <a href="https://de-de.facebook.com/purple.d.music"><img src={facebook} alt="Facebook"/></a>
             </div>

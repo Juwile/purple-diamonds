@@ -379,6 +379,29 @@ label{
   margin: 6px 0 6px 0;
 }
 
+.error-box{
+  background-color: #f5e6e6;
+  color: #7a1f1f;
+  padding: 12px;
+  margin: 24px 0 24px 0;
+  border: 1px solid #d9a0a0;
+  max-width: 50%;
+}
+
+.error-box h2{
+  font-size: 1.3em;
+  margin: 12px 0 12px 0;
+}
+
+.error-box p{
+  margin: 6px 0 6px 0;
+}
+
+.error-box a{
+  color: #7a1f1f;
+  text-decoration: underline;
+}
+
 /***********************************************Links****************************************************/
 
 .links a{
@@ -948,7 +971,8 @@ video{
     max-width: 50%;
   }
 
-  .confirmation-box{
+  .confirmation-box,
+  .error-box{
     max-width: 100%;
   }
 
