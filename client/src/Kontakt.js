@@ -8,7 +8,8 @@ export default function Kontakt() {
   const [status, setStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
 
   function handleChange(e) {
-    setFields(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setFields(prev => ({ ...prev, [name]: value }));
   }
 
   async function submitForm(e) {
