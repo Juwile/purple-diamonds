@@ -1,14 +1,14 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Home from './Home.js';
-import Repertoire from './Repertoire.js';
-import Kontakt from './Kontakt.js';
-import About from './About.js';
-import Aufnahmen from './Aufnahmen.js';
-import Links from './Links.js';
-import Hochzeiten from './Hochzeiten.js';
-import Events from './Events.js';
+import Home from './Home.jsx';
+import Repertoire from './Repertoire.jsx';
+import Kontakt from './Kontakt.jsx';
+import About from './About.jsx';
+import Aufnahmen from './Aufnahmen.jsx';
+import Links from './Links.jsx';
+import Hochzeiten from './Hochzeiten.jsx';
+import Events from './Events.jsx';
 
 const NotFound = () => <h1>Page Not Found</h1>;
 

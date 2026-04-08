@@ -4,10 +4,8 @@ import './default.css';
 import logo from './pictures/logo.svg';
 import insta from './pictos/insta.png'
 import facebook from './pictos/facebook.png'
-import BurgerMenu from "./BurgerMenu.js";
-
-
-import Contents from "./Contents.js";
+import BurgerMenu from "./BurgerMenu.jsx";
+import Contents from "./Contents.jsx";
 
 function NavBar() {
     return(

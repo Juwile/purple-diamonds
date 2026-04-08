@@ -12,6 +12,6 @@ const element = (
 
 ReactDOM.render(element, document.getElementById('root'));
 
-if (module.hot) {
-    module.hot.accept();
+if (import.meta.hot) {
+    import.meta.hot.accept();
 }
